@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Live Worship</h1>
+
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/live_stream?channel=UCZfUcACWtl3W0SCu2G9gz4A" 
+            title="Live Worship" 
+            frameborder="0" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <p style="text-align: center; color: #666;">
+        (This player automatically shows our service whenever we're live. 
+        If nothing appears, we're not currently streaming.)
+    </p>
+
+    <h2 style="text-align: center; margin-top: 30px;">Watch Past Sermons</h2>
+    <p style="text-align: center;">
+        <a href="https://www.youtube.com/@BETHESDABLESSINGCHURCH/videos" target="_blank">
+            Browse all sermons on our YouTube channel
+        </a>
+    </p>
+{% endblock %}

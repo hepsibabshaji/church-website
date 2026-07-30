@@ -1,0 +1,328 @@
+/* ===== BASE STYLES ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    padding: 20px;
+}
+
+p {
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    color: #f4c430;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    margin-top: 20px;
+}
+
+/* ===== SERVICE TIMES ===== */
+.service-times {
+    background-color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.service-times-box {
+    margin-left: 100px;
+    padding: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    padding: 0;
+    color: white;
+}
+
+/* ===== SERMONS / VIDEO EMBED ===== */
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+}
+
+/* ===== EVENTS PAGE ===== */
+.event-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2c3e50;
+}
+
+.event-card h3 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+/* ===== PRAYER REQUEST FORM ===== */
+.prayer-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prayer-form label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.prayer-form input,
+.prayer-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+
+.prayer-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prayer-form button:hover {
+    background-color: #1a252f;
+}
+
+/* ===== ADMIN LOGIN ===== */
+.login-box {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.login-box input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-box button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ===== ADMIN DASHBOARD ===== */
+.admin-requests {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.request-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #c0392b;
+}
+
+/* ===== GALLERY ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery-grid img:hover {
+    opacity: 0.85;
+}
+
+/* ===== LEADERSHIP PAGE ===== */
+.leader-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.leader-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.leader-info h2 {
+    margin-top: 0;
+}
+
+/* ===== CONTACT PAGE ===== */
+.contact-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 250px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    background-color: #f4c430;
+    color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero img {
+        height: 200px;
+    }
+
+    .leader-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}

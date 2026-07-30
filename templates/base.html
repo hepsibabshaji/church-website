@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bethesda Blessing Church in Kuzhithurai,TamilNadu.Join us for Sunday worship,Bible Study,prayer meetings,and community fellowship">
+    <title>{% block title %}Bethesda Blessing{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>S
+    
+    <hr>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <p>Bethesda Blessing Church</p>
+        <p>18/42 AG Blessing Nagar Kalayankulam, Kuzhithurai, TamilNadu - 629163</p>
+        <p>Phone: +91 9442263224 | Email: bethesdablessingkuz@gmail.com</p>
+        <p>&copy; 2026 Bethesda Blessing Church. All rights reserved.</p>
+    </footer>
+    <nav>
+     <a href="/">Home</a>
+     <a href="/about">About</a>
+     <a href="/sermons">Sermons</a>
+     <a href="/events">Events</a>
+     <a href="/vision">Our Mission</a>
+     <a href="/contact">Contact</a>
+     <a href="/gallery">Gallery</a>
+     <a href="/leadership">Leadership</a>
+     <a href="/prayer">Prayer Request</a>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Prayer Requests</h1>
+    <p style="text-align: center;"><a href="/logout">Log Out</a></p>
+    <p style="text-align: center;">
+    <a href="/logout">Log Out</a> | 
+    <a href="/admin/export">Download Backup (CSV)</a>
+</p>
+
+    <div class="admin-requests">
+        {% for req in requests %}
+            <div class="request-card">
+                <p><strong>Name:</strong> {{ req['name'] or 'Anonymous' }}</p>
+                <p><strong>Message:</strong> {{ req['message'] }}</p>
+                <p><strong>Contact:</strong> {{ req['contact'] or 'Not provided' }}</p>
+                <p><strong>Submitted:</strong> {{ req['date_submitted'] }}</p>
+            </div>
+        {% else %}
+            <p style="text-align: center;">No prayer requests yet.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

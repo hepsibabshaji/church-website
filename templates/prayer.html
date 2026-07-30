@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Prayer Request</h1>
+    <p style="text-align: center;">Share your prayer need with us. Your request is private and seen only by our pastoral team.</p>
+
+    <form method="POST" action="/prayer" class="prayer-form">
+        <label for="name">Your Name (optional):</label>
+        <input type="text" id="name" name="name">
+
+        <label for="message">Prayer Request:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label for="contact">Phone or Email (optional, if you'd like a reply):</label>
+        <input type="text" id="contact" name="contact">
+
+        <button type="submit">Submit Prayer Request</button>
+        <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
+    </form>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Photo Gallery</h1>
+    <p style="text-align: center;">Moments from our worship, fellowship, and community life.</p>
+
+    <div class="gallery-grid">
+        <img src="{{ url_for('static', filename='gallery/photo1.jpg') }}" alt="Church event">
+        <img src="{{ url_for('static', filename='gallery/photo2.jpg') }}" alt="Church event">
+        <img src="{{ url_for('static', filename='gallery/photo3.jpg') }}" alt="Church event">
+        <img src="{{ url_for('static', filename='gallery/photo4.jpg') }}" alt="Church event">
+        <img src="{{ url_for('static', filename='gallery/photo5.jpg') }}" alt="Church event">
+        <img src="{{ url_for('static', filename='gallery/photo6.jpg') }}" alt="Church event">
+    </div>
+{% endblock %}

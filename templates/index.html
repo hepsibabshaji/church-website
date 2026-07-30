@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="hero">
+        <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Church building">
+        <h1>Welcome to Bethesda Blessing Church</h1>
+        <p>Join us for worship every Sunday!</p>
+    </div>
+
+    <div class="service-times">
+     <h2>Service Times</h2>
+        <p>Sunday: 9:00am and 1:00:00pm</p>
+        <p>Sunday Second Worship: 4:30pm to 6:00pm</p>
+        <p>Tuesday Bible Study: 6:30pm to 8:00pm</P>
+        <p>Wednesday: Ladies Prayer:10:30am to 1:00pm and Light of the World Gospel:10:00pm to 1:00am</p>
+        <p>Friday Fasting Prayer:9:00am to 2:00pm</p>
+        <p>Saturday Prayer:6:30pm to 8:00pm</p>
+        <p>On Each Month's First Friday & Saturday: (Special Fasting Prayer for Family And Childrens)</p>
+    </div>
+
+    <div class="newsletter">
+    <h2>Stay Connected</h2>
+    <p>Sign up to receive updates on events and announcements.</p>
+    <form method="POST" action="/newsletter" class="newsletter-form">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+    </form>
+    </div>
+{% endblock %}
