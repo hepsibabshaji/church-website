@@ -7,8 +7,18 @@
     <title>{% block title %}Bethesda Blessing{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body>S
-    
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/sermons">Sermons</a>
+        <a href="/events">Events</a>
+        <a href="/vision">Our Mission</a>
+        <a href="/contact">Contact</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/leadership">Leadership</a>
+        <a href="/prayer">Prayer Request</a>
+    </nav>
     <hr>
     {% block content %}
     {% endblock %}
@@ -18,17 +28,5 @@
         <p>Phone: +91 9442263224 | Email: bethesdablessingkuz@gmail.com</p>
         <p>&copy; 2026 Bethesda Blessing Church. All rights reserved.</p>
     </footer>
-    <nav>
-     <a href="/">Home</a>
-     <a href="/about">About</a>
-     <a href="/sermons">Sermons</a>
-     <a href="/events">Events</a>
-     <a href="/vision">Our Mission</a>
-     <a href="/contact">Contact</a>
-     <a href="/gallery">Gallery</a>
-     <a href="/leadership">Leadership</a>
-     <a href="/prayer">Prayer Request</a>
-    </nav>
-    
 </body>
 </html>
